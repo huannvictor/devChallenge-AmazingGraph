@@ -77,7 +77,6 @@ nav .menu {
   display: none;
   opacity: 0;
   visibility: hidden;
-  top: -20rem;
   transition: 0.2s;
 }
 
@@ -132,4 +131,49 @@ main .pageDescription button{
   font-size: large;
   font-weight: 700;
   color: #fff;
+}
+
+
+@media (min-width: 1024px) {
+  nav div.icon-menu{
+    display: none;
+  }
+
+  nav .menu {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 80px;
+  }
+
+  main .team {
+    width: 60%;
+  }
+
+  div.pageDescription{
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  div.pageDescription h1{
+    font-size: 50px;
+  }
+
+  div.pageDescription p, 
+  div.pageDescription button{
+    font-size: 24px;
+  }
 }
