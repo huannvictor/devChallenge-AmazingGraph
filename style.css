@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialised;
+  height: 100vh;
+}
+
+header{
+  padding: 40px;
+}
+
+nav.navContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+strong#devChallengeLogo {
+  color: #D2872C;
+  font-size: 24px;
+}
+
+div.icon-menu{
+  content: "";
+  background: url(assets/icons8-cardápio.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+div.icon-close-menu{
+  display: none;
+  transition: 0.3s;
+}
+
+nav.show div.icon-close-menu{
+  content: "";
+  background: url(assets/icons8-close.svg) no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  transition: 0.3s;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+nav .menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.menu ul li a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #766F68;
+}
+
+.menu ul li a:hover {
+  padding-bottom: 10px;
+  border-bottom: #766F68 1px solid;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+main .team{
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+main .pageDescription{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  color: #766F68;
+}
+
+main .pageDescription button{
+  background-color: #D2872C;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  width: 80%;
+  font-size: large;
+  font-weight: 700;
+  color: #fff;
+}
